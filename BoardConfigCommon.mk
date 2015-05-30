@@ -86,7 +86,8 @@ BOARD_SEPOLICY_DIRS += \
 BOARD_SEPOLICY_UNION += \
     akmd.te \
     ewtzmud.te \
-    kernel.te
+    kernel.te \
+    felica.te
 
 # Wifi
 BOARD_HAS_QCOM_WLAN := true

@@ -41,3 +41,6 @@
 
 # Timer
 /dev/timerirq                                   u:object_r:timerirq_device:s0
+
+#FeliCa
+/dev/felica(.*)					u:object_r:felica_device:s0
