@@ -34,7 +34,8 @@ PRODUCT_COPY_FILES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    camera.msm8960
+    camera.msm8960 \
+    Snap
 
 # Ramdisk
 PRODUCT_PACKAGES += \
@@ -55,6 +56,16 @@ PRODUCT_COPY_FILES += \
 
 # Recovery
 COMMON_GLOBAL_CFLAGS += -DNO_SECURE_DISCARD
+
+# Shims
+PRODUCT_PACKAGES += \
+    libshim_camera \
+    libshim_log \
+    libshim_qcopt
+
+# Stlport
+PRODUCT_PACKAGES += \
+    libstlport
 
 # Thermal
 PRODUCT_COPY_FILES += \
